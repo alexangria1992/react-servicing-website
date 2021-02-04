@@ -4,6 +4,7 @@ import { BrandLogo } from "../../components/brandLogo";
 import TopSectionBackgroundImg from "../../images/landing-page.jpg"
 import TheBestSpecialistsImg from "../../images/Work only with the best.png"
 import {Marginer} from '../../components/marginer'
+import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
     width: 100%;
@@ -73,6 +74,8 @@ export function TopSection(props)
                 <SloganText>
                     For the job
                 </SloganText>
+                <Marginer direction="vertical" margin={15}/>
+                <Button>Join Now</Button>
             </LogoContainer>
             <StandoutImg>
                 <img src={TheBestSpecialistsImg} alt=""/>

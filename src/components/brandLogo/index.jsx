@@ -10,8 +10,8 @@ const  BrandLogoContainer = styled.div`
 `;
 
 const LogoImage =  styled.div`
-    width: ${({size}) => size ? size + "px" : "4em" };
-    height: ${({size}) => size ? size + "px" : "4em" };
+    width: ${({size}) => size ? size + "px" : "2em" };
+    height: ${({size}) => size ? size + "px" : "2em" };
 
     img
     {
@@ -22,7 +22,7 @@ const LogoImage =  styled.div`
 
 const LogoTitle = styled.h2`
     margin: 0; 
-    font-size: ${({size}) => size ? size + "px" : "35px" };
+    font-size: ${({size}) => size ? size + "px" : "20px" };
     color: #fff;
     font-weight: 700;
     margin-left: 6px; 

@@ -62,8 +62,10 @@ const SloganText = styled.h3`
 
 export function TopSection(props)
 {
+    const {children} = props;
     return <TopSectionContainer>
         <BackgroundFilter>
+            {children}
         <TopSectionInnerContainer>
             <LogoContainer>
                 <BrandLogo logoSize={65} textSize={55}/>

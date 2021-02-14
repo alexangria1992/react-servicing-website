@@ -26,5 +26,5 @@ const ButtonWrapper = styled.button`
 
 export function Button(props){
     const {size} = props;
-   return <ButtonWrapper size={size}>{props.children}</ButtonWrapper>
+   return <ButtonWrapper size={size} className={props.className}>{props.children}</ButtonWrapper>
 }

@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { Marginer } from "../../components/marginer"
 import { Navbar } from "../../components/navbar"
 import { InnerPageContainer, PageContainer } from "../../components/pageContainer"
 import { deviceSize } from "../../components/responsive"
+import { SpecialistAd } from "../../components/specialistAd"
 import { Services } from "./services"
 import { TopSection } from "./topSection"
 
@@ -14,6 +16,7 @@ const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 1em;
 `;
 
 
@@ -22,13 +25,14 @@ const ContentContainer = styled.div`
 export function HomePage(props)
 {
     return <PageContainer>
-        <TopSection>
-            <Navbar/>
-        </TopSection>
-        <InnerPageContainer>
-            <ContentContainer>
+              <TopSection>
+                 <Navbar/>
+             </TopSection>
+            <InnerPageContainer>
+              <ContentContainer>
                 <Services/>
-            </ContentContainer>
-        </InnerPageContainer>
-    </PageContainer>
+              </ContentContainer>
+              <SpecialistAd/>
+            </InnerPageContainer>
+         </PageContainer>
 }
